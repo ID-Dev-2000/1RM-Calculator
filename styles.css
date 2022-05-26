@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Tiro+Tamil&display=swap');
+
+* *:not(title){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Tiro Tamil', serif;
+} /* This seems to over ride media queries */
+
+body {
+    background-color: whitesmoke;
+}
+
+button {
+    margin: 10px;
+}
+
+.mainContent {
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+}
