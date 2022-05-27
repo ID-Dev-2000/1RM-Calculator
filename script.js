@@ -6,5 +6,9 @@ function calculateMaximum() {
     let weight = weightInitializer.value
     let repCount = ID.options[ID.selectedIndex].value
     let calculatedMaxRep = weight * (1 + (repCount/30))
+    if(weight == ''){
+        resultDisplay.innerHTML = 'PLEASE ENTER WEIGHT LIFTED'
+    } else {
     resultDisplay.innerHTML = `RESULT: ${Math.trunc(calculatedMaxRep)}`
+    }
 }
